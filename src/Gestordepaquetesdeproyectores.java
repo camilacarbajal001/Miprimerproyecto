@@ -35,6 +35,14 @@ public class Gestordepaquetesdeproyectores {
         this.nombredeempresa = nombredeempresa;
     }
         
-        
+       Paquetedeproyectos buscarPaquetedeProyectores(int codPaq) {
+       
+           for(int i=0;i<paquetes.size();i++){
+               if(codPaq==paquetes.get(i).getCodPaquetedeProyectores()){
+                   return paquetes.get(i);
+               }
+           }
+           return null;
+       }
     
 }
